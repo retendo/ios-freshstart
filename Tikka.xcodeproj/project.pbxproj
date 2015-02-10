@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		417213CB6C65FA916FEDFEE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 417213219A484D52CF814AD6 /* AppDelegate.m */; };
+		41721CC9C40E3CEA8D7D7AC5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 417215B6052C4884027BDCF6 /* Localizable.strings */; };
+		41721E3C8F93E5E382548A18 /* TickerListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417215F76EAB2E46662ADE69 /* TickerListController.m */; };
+		8A338D981A8A9C06002AD022 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A338D971A8A9C06002AD022 /* main.m */; };
+		8A338DA31A8A9C06002AD022 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A338DA21A8A9C06002AD022 /* Images.xcassets */; };
+		8A338DB21A8A9C06002AD022 /* TikkaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A338DB11A8A9C06002AD022 /* TikkaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A338DAC1A8A9C06002AD022 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A338D8A1A8A9C06002AD022 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A338D911A8A9C06002AD022;
+			remoteInfo = Tikka;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4172100BBAF57F225C489714 /* TickerListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TickerListController.h; sourceTree = "<group>"; };
+		417213219A484D52CF814AD6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		417215B6052C4884027BDCF6 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		417215F76EAB2E46662ADE69 /* TickerListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TickerListController.m; sourceTree = "<group>"; };
+		41721AD204B5FE80801364FD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8A338D921A8A9C06002AD022 /* Tikka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tikka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A338D961A8A9C06002AD022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A338D971A8A9C06002AD022 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A338DA21A8A9C06002AD022 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8A338DAB1A8A9C06002AD022 /* TikkaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TikkaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A338DB01A8A9C06002AD022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A338DB11A8A9C06002AD022 /* TikkaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TikkaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A338D8F1A8A9C06002AD022 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A338DA81A8A9C06002AD022 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		417214196B5F3C38F0A75D75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4172100BBAF57F225C489714 /* TickerListController.h */,
+				417215F76EAB2E46662ADE69 /* TickerListController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		417214F007805D996709B582 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		417216772A32EBE40240FDE5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4172168581BA89B3FF1013B4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		417217F643D5D7C2281A4BB5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				41721AD204B5FE80801364FD /* AppDelegate.h */,
+				417213219A484D52CF814AD6 /* AppDelegate.m */,
+				417214196B5F3C38F0A75D75 /* View */,
+				417216772A32EBE40240FDE5 /* ViewModel */,
+				41721B2BE7A4C0FC6D9B1453 /* Model */,
+				4172168581BA89B3FF1013B4 /* Service */,
+				417214F007805D996709B582 /* Util */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		41721B2BE7A4C0FC6D9B1453 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A338D891A8A9C06002AD022 = {
+			isa = PBXGroup;
+			children = (
+				8A338D941A8A9C06002AD022 /* Tikka */,
+				8A338DAE1A8A9C06002AD022 /* TikkaTests */,
+				8A338D931A8A9C06002AD022 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A338D931A8A9C06002AD022 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A338D921A8A9C06002AD022 /* Tikka.app */,
+				8A338DAB1A8A9C06002AD022 /* TikkaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A338D941A8A9C06002AD022 /* Tikka */ = {
+			isa = PBXGroup;
+			children = (
+				8A338DA21A8A9C06002AD022 /* Images.xcassets */,
+				8A338D951A8A9C06002AD022 /* Supporting Files */,
+				417215B6052C4884027BDCF6 /* Localizable.strings */,
+				417217F643D5D7C2281A4BB5 /* Classes */,
+			);
+			path = Tikka;
+			sourceTree = "<group>";
+		};
+		8A338D951A8A9C06002AD022 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A338D961A8A9C06002AD022 /* Info.plist */,
+				8A338D971A8A9C06002AD022 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A338DAE1A8A9C06002AD022 /* TikkaTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A338DB11A8A9C06002AD022 /* TikkaTests.m */,
+				8A338DAF1A8A9C06002AD022 /* Supporting Files */,
+			);
+			path = TikkaTests;
+			sourceTree = "<group>";
+		};
+		8A338DAF1A8A9C06002AD022 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A338DB01A8A9C06002AD022 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A338D911A8A9C06002AD022 /* Tikka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A338DB51A8A9C06002AD022 /* Build configuration list for PBXNativeTarget "Tikka" */;
+			buildPhases = (
+				8A338D8E1A8A9C06002AD022 /* Sources */,
+				8A338D8F1A8A9C06002AD022 /* Frameworks */,
+				8A338D901A8A9C06002AD022 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tikka;
+			productName = Tikka;
+			productReference = 8A338D921A8A9C06002AD022 /* Tikka.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A338DAA1A8A9C06002AD022 /* TikkaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A338DB81A8A9C06002AD022 /* Build configuration list for PBXNativeTarget "TikkaTests" */;
+			buildPhases = (
+				8A338DA71A8A9C06002AD022 /* Sources */,
+				8A338DA81A8A9C06002AD022 /* Frameworks */,
+				8A338DA91A8A9C06002AD022 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A338DAD1A8A9C06002AD022 /* PBXTargetDependency */,
+			);
+			name = TikkaTests;
+			productName = TikkaTests;
+			productReference = 8A338DAB1A8A9C06002AD022 /* TikkaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A338D8A1A8A9C06002AD022 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Oliver Rösner";
+				TargetAttributes = {
+					8A338D911A8A9C06002AD022 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					8A338DAA1A8A9C06002AD022 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 8A338D911A8A9C06002AD022;
+					};
+				};
+			};
+			buildConfigurationList = 8A338D8D1A8A9C06002AD022 /* Build configuration list for PBXProject "Tikka" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A338D891A8A9C06002AD022;
+			productRefGroup = 8A338D931A8A9C06002AD022 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A338D911A8A9C06002AD022 /* Tikka */,
+				8A338DAA1A8A9C06002AD022 /* TikkaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A338D901A8A9C06002AD022 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A338DA31A8A9C06002AD022 /* Images.xcassets in Resources */,
+				41721CC9C40E3CEA8D7D7AC5 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A338DA91A8A9C06002AD022 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A338D8E1A8A9C06002AD022 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A338D981A8A9C06002AD022 /* main.m in Sources */,
+				417213CB6C65FA916FEDFEE2 /* AppDelegate.m in Sources */,
+				41721E3C8F93E5E382548A18 /* TickerListController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A338DA71A8A9C06002AD022 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A338DB21A8A9C06002AD022 /* TikkaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A338DAD1A8A9C06002AD022 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A338D911A8A9C06002AD022 /* Tikka */;
+			targetProxy = 8A338DAC1A8A9C06002AD022 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8A338DB31A8A9C06002AD022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8A338DB41A8A9C06002AD022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A338DB61A8A9C06002AD022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Tikka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8A338DB71A8A9C06002AD022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Tikka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8A338DB91A8A9C06002AD022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TikkaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tikka.app/Tikka";
+			};
+			name = Debug;
+		};
+		8A338DBA1A8A9C06002AD022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TikkaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tikka.app/Tikka";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A338D8D1A8A9C06002AD022 /* Build configuration list for PBXProject "Tikka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A338DB31A8A9C06002AD022 /* Debug */,
+				8A338DB41A8A9C06002AD022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A338DB51A8A9C06002AD022 /* Build configuration list for PBXNativeTarget "Tikka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A338DB61A8A9C06002AD022 /* Debug */,
+				8A338DB71A8A9C06002AD022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A338DB81A8A9C06002AD022 /* Build configuration list for PBXNativeTarget "TikkaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A338DB91A8A9C06002AD022 /* Debug */,
+				8A338DBA1A8A9C06002AD022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A338D8A1A8A9C06002AD022 /* Project object */;
+}
