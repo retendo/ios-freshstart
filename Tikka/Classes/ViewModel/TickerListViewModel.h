@@ -6,10 +6,14 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class RACSignal;
+
 @interface TickerListViewModel : NSObject
+
+@property (nonatomic, strong, readonly) RACSignal *bgColorSignal;
 
 - (NSString *)title;
 
-- (void)subscribeToColorChanges:(void (^)(UIColor *))aUpdateBlock;
+- (void)subscribeToTitleColorChanges:(void (^)(UIColor *))aUpdateBlock;
 
 @end

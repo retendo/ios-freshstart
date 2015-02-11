@@ -4,16 +4,27 @@
 //
 
 #import "TickerListViewModel.h"
+#import "RACSignal.h"
+#import "RACSignal+Operations.h"
+#import "RACScheduler.h"
+#import "UIColor+Hue.h"
+#import "NSObject+RACPropertySubscribing.h"
+#import <libextobjc/EXTScope.h>
+#import <ReactiveCocoa/RACSubscriptingAssignmentTrampoline.h>
 
 @interface TickerListViewModel ()
 
+@property(nonatomic, strong) UIColor *titleColor;
 @property(nonatomic, strong) UIColor *bgColor;
-@property(nonatomic, copy) void (^bgColorUpdateBlock)(UIColor *);
+@property(nonatomic, copy) void (^titleColorUpdateBlock)(UIColor *);
 @property(nonatomic, strong) NSTimer *timer;
+@property (nonatomic, strong) RACSignal *bgColorSignal;
 
 @end
 
 static const CGFloat hueStep = (CGFloat) (1.0 / 256.0);
+static const NSTimeInterval fireInterval = 0.05;
+
 
 @implementation TickerListViewModel
 
@@ -23,12 +34,24 @@ static const CGFloat hueStep = (CGFloat) (1.0 / 256.0);
     self = [super init];
     if (self) {
 
-        self.bgColor = [self bgColorWithHue:hueStep];
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.05
+        self.bgColorSignal = RACObserve(self, bgColor);
+
+        RACSignal *timerSignal = [RACSignal interval:fireInterval onScheduler:[RACScheduler mainThreadScheduler]];
+
+        @weakify(self);
+        RAC(self, bgColor) = [timerSignal map:^id(id _) {
+            @strongify(self);
+            return [UIColor colorByIncrementingHueFromColor:self.bgColor by:hueStep];
+        }];
+
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:fireInterval
                                                       target:self
-                                                    selector:@selector(changeColor)
+                                                    selector:@selector(changeTitleColor)
                                                     userInfo:nil
                                                      repeats:YES];
+
+        self.titleColor =  [UIColor colorWithHue:hueStep saturation:0.9 brightness:0.7 alpha:1.0];
+        self.bgColor = [UIColor colorWithHue:hueStep saturation:0.7 brightness:0.9 alpha:1.0];
     }
 
     return self;
@@ -45,34 +68,24 @@ static const CGFloat hueStep = (CGFloat) (1.0 / 256.0);
     return NSLocalizedString(@"NavTitle_TickerList", @"Tikka");
 }
 
-- (void)subscribeToColorChanges:(void (^)(UIColor *))aUpdateBlock {
-    self.bgColorUpdateBlock = aUpdateBlock;
-    aUpdateBlock(self.bgColor);
+- (void)subscribeToTitleColorChanges:(void (^)(UIColor *))aUpdateBlock {
+    self.titleColorUpdateBlock = aUpdateBlock;
+    aUpdateBlock(self.titleColor);
+}
+
+#pragma mark Setter
+
+- (void)setTitleColor:(UIColor *)aTitleColor {
+    _titleColor = aTitleColor;
+    if (self.titleColorUpdateBlock) {
+        self.titleColorUpdateBlock(_titleColor);
+    }
 }
 
 #pragma mark Private
 
-- (void)setBgColor:(UIColor *)aBgColor {
-    _bgColor = aBgColor;
-    if (self.bgColorUpdateBlock) {
-        self.bgColorUpdateBlock(_bgColor);
-    }
-}
-
-- (void)changeColor {
-    CGFloat hue = [self getHueForColor:self.bgColor withDefaultValue:hueStep];
-    hue = (CGFloat) (hue >= 1.0 ? hueStep : hue + hueStep);
-    self.bgColor = [self bgColorWithHue:hue];
-}
-
-- (UIColor *)bgColorWithHue:(CGFloat)aHue {
-    return [UIColor colorWithHue:aHue saturation:0.9 brightness:0.9 alpha:1.0];
-}
-
-- (CGFloat)getHueForColor:(UIColor *)aColor withDefaultValue:(CGFloat)aDefaultValue {
-    CGFloat hue;
-    BOOL success = [aColor getHue:&hue saturation:nil brightness:nil alpha:nil];
-    return success ? hue : aDefaultValue;
+- (void)changeTitleColor {
+    self.titleColor = [UIColor colorByIncrementingHueFromColor:self.titleColor by:hueStep];
 }
 
 @end

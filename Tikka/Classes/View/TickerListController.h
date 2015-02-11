@@ -12,6 +12,7 @@
 
 @interface TickerListController : UIViewController
 
+// Designated initializer
 - (instancetype)initWithViewModel:(TickerListViewModel *)aViewModel;
 
 @end

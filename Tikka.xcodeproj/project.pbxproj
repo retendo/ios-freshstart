@@ -10,6 +10,7 @@
 		065C79676930F8CC152D376D /* libPods-Tikka.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5C3007AAC2076F8DADC17D8 /* libPods-Tikka.a */; };
 		41721242ED9CF265954B1A7F /* TickerListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41721D8C8B1E8839C2E2961C /* TickerListViewModel.m */; };
 		417213CB6C65FA916FEDFEE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 417213219A484D52CF814AD6 /* AppDelegate.m */; };
+		4172146BCAB1C631370A3FC4 /* UIColor+Hue.m in Sources */ = {isa = PBXBuildFile; fileRef = 41721E40EE2FA6905E366B75 /* UIColor+Hue.m */; };
 		41721CC9C40E3CEA8D7D7AC5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 417215B6052C4884027BDCF6 /* Localizable.strings */; };
 		41721E3C8F93E5E382548A18 /* TickerListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417215F76EAB2E46662ADE69 /* TickerListController.m */; };
 		8A338D981A8A9C06002AD022 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A338D971A8A9C06002AD022 /* main.m */; };
@@ -30,11 +31,13 @@
 /* Begin PBXFileReference section */
 		4172100BBAF57F225C489714 /* TickerListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TickerListController.h; sourceTree = "<group>"; };
 		417213219A484D52CF814AD6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		417213E856C6A026527725EB /* UIColor+Hue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hue.h"; sourceTree = "<group>"; };
 		417215B6052C4884027BDCF6 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		417215F76EAB2E46662ADE69 /* TickerListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TickerListController.m; sourceTree = "<group>"; };
 		417218D1D68F3A5DAC99B7D4 /* TickerListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TickerListViewModel.h; sourceTree = "<group>"; };
 		41721AD204B5FE80801364FD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41721D8C8B1E8839C2E2961C /* TickerListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TickerListViewModel.m; sourceTree = "<group>"; };
+		41721E40EE2FA6905E366B75 /* UIColor+Hue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hue.m"; sourceTree = "<group>"; };
 		8A338D921A8A9C06002AD022 /* Tikka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tikka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A338D961A8A9C06002AD022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A338D971A8A9C06002AD022 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 		417214F007805D996709B582 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				41721E40EE2FA6905E366B75 /* UIColor+Hue.m */,
+				417213E856C6A026527725EB /* UIColor+Hue.h */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -331,6 +336,7 @@
 				417213CB6C65FA916FEDFEE2 /* AppDelegate.m in Sources */,
 				41721E3C8F93E5E382548A18 /* TickerListController.m in Sources */,
 				41721242ED9CF265954B1A7F /* TickerListViewModel.m in Sources */,
+				4172146BCAB1C631370A3FC4 /* UIColor+Hue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +444,7 @@
 				INFOPLIST_FILE = Tikka/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Debug;
 		};
@@ -450,6 +457,7 @@
 				INFOPLIST_FILE = Tikka/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Release;
 		};

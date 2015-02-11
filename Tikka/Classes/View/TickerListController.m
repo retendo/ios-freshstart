@@ -8,6 +8,7 @@
 
 #import "TickerListController.h"
 #import "TickerListViewModel.h"
+#import "RACSubscriptingAssignmentTrampoline.h"
 
 @interface TickerListController ()
 
@@ -38,18 +39,26 @@
     return [self initWithViewModel:nil];
 }
 
+#pragma mark Lifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.font = [UIFont boldSystemFontOfSize:20];
+    self.navigationItem.titleView = titleLabel;
 
     // Get static value from view model
-    self.title = self.viewModel.title;
+    titleLabel.text = self.viewModel.title;
 
     // Subscribe to value changes without ReactiveCocoa
-    __weak TickerListController *weakSelf = self;
-    [self.viewModel subscribeToColorChanges:^(UIColor *aColor) {
-        weakSelf.view.backgroundColor = aColor;
+    [self.viewModel subscribeToTitleColorChanges:^(UIColor *aColor) {
+        titleLabel.textColor = aColor;
     }];
+
+    // Subscribe to value changes with ReactiveCocoa
+    RAC(self.view, backgroundColor) = self.viewModel.bgColorSignal;
 }
 
 - (void)didReceiveMemoryWarning {
