@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41721242ED9CF265954B1A7F /* TickerListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41721D8C8B1E8839C2E2961C /* TickerListViewModel.m */; };
 		417213CB6C65FA916FEDFEE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 417213219A484D52CF814AD6 /* AppDelegate.m */; };
 		41721CC9C40E3CEA8D7D7AC5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 417215B6052C4884027BDCF6 /* Localizable.strings */; };
 		41721E3C8F93E5E382548A18 /* TickerListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417215F76EAB2E46662ADE69 /* TickerListController.m */; };
@@ -30,7 +31,9 @@
 		417213219A484D52CF814AD6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		417215B6052C4884027BDCF6 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		417215F76EAB2E46662ADE69 /* TickerListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TickerListController.m; sourceTree = "<group>"; };
+		417218D1D68F3A5DAC99B7D4 /* TickerListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TickerListViewModel.h; sourceTree = "<group>"; };
 		41721AD204B5FE80801364FD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		41721D8C8B1E8839C2E2961C /* TickerListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TickerListViewModel.m; sourceTree = "<group>"; };
 		8A338D921A8A9C06002AD022 /* Tikka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tikka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A338D961A8A9C06002AD022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A338D971A8A9C06002AD022 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -77,6 +80,8 @@
 		417216772A32EBE40240FDE5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				41721D8C8B1E8839C2E2961C /* TickerListViewModel.m */,
+				417218D1D68F3A5DAC99B7D4 /* TickerListViewModel.h */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 				8A338D981A8A9C06002AD022 /* main.m in Sources */,
 				417213CB6C65FA916FEDFEE2 /* AppDelegate.m in Sources */,
 				41721E3C8F93E5E382548A18 /* TickerListController.m in Sources */,
+				41721242ED9CF265954B1A7F /* TickerListViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

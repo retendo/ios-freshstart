@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TickerListController.h"
+#import "TickerListViewModel.h"
 
 @interface AppDelegate ()
 
@@ -23,9 +24,10 @@
 
     UINavigationController *mainNavigationController = [[UINavigationController alloc] init];
 
-    TickerListController *viewController = [[TickerListController alloc] init];
+    TickerListViewModel *tickerListViewModel = [[TickerListViewModel alloc] init];
+    TickerListController *tickerListController = [[TickerListController alloc] initWithViewModel:tickerListViewModel];
 
-    mainNavigationController.viewControllers = @[viewController];
+    mainNavigationController.viewControllers = @[tickerListController];
 
     mainWindow.rootViewController = mainNavigationController;
     [mainWindow makeKeyAndVisible];
