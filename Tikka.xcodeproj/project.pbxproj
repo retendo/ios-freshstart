@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		065C79676930F8CC152D376D /* libPods-Tikka.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5C3007AAC2076F8DADC17D8 /* libPods-Tikka.a */; };
 		41721242ED9CF265954B1A7F /* TickerListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41721D8C8B1E8839C2E2961C /* TickerListViewModel.m */; };
 		417213CB6C65FA916FEDFEE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 417213219A484D52CF814AD6 /* AppDelegate.m */; };
 		41721CC9C40E3CEA8D7D7AC5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 417215B6052C4884027BDCF6 /* Localizable.strings */; };
@@ -41,6 +42,9 @@
 		8A338DAB1A8A9C06002AD022 /* TikkaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TikkaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A338DB01A8A9C06002AD022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A338DB11A8A9C06002AD022 /* TikkaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TikkaTests.m; sourceTree = "<group>"; };
+		A77E1CD17D070F189D32CAC8 /* Pods-Tikka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tikka.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tikka/Pods-Tikka.debug.xcconfig"; sourceTree = "<group>"; };
+		C5C3007AAC2076F8DADC17D8 /* libPods-Tikka.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tikka.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0E9EE4C989DA32E7D6E6A9 /* Pods-Tikka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tikka.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tikka/Pods-Tikka.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				065C79676930F8CC152D376D /* libPods-Tikka.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26496616AB7AF0ED994D9876 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A77E1CD17D070F189D32CAC8 /* Pods-Tikka.debug.xcconfig */,
+				FE0E9EE4C989DA32E7D6E6A9 /* Pods-Tikka.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		417214196B5F3C38F0A75D75 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +134,8 @@
 				8A338D941A8A9C06002AD022 /* Tikka */,
 				8A338DAE1A8A9C06002AD022 /* TikkaTests */,
 				8A338D931A8A9C06002AD022 /* Products */,
+				26496616AB7AF0ED994D9876 /* Pods */,
+				EB6982839147B9A1874284F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,6 +185,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EB6982839147B9A1874284F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5C3007AAC2076F8DADC17D8 /* libPods-Tikka.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A338DB51A8A9C06002AD022 /* Build configuration list for PBXNativeTarget "Tikka" */;
 			buildPhases = (
+				B558ECD122B5920309F8689C /* Check Pods Manifest.lock */,
 				8A338D8E1A8A9C06002AD022 /* Sources */,
 				8A338D8F1A8A9C06002AD022 /* Frameworks */,
 				8A338D901A8A9C06002AD022 /* Resources */,
+				2F012DD220F914CDC14A3B3E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,6 +288,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F012DD220F914CDC14A3B3E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tikka/Pods-Tikka-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B558ECD122B5920309F8689C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A338D8E1A8A9C06002AD022 /* Sources */ = {
@@ -372,6 +431,7 @@
 		};
 		8A338DB61A8A9C06002AD022 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A77E1CD17D070F189D32CAC8 /* Pods-Tikka.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -383,6 +443,7 @@
 		};
 		8A338DB71A8A9C06002AD022 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE0E9EE4C989DA32E7D6E6A9 /* Pods-Tikka.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
