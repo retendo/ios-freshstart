@@ -52,13 +52,9 @@
     // Get static value from view model
     titleLabel.text = self.viewModel.title;
 
-    // Subscribe to value changes without ReactiveCocoa
-    [self.viewModel subscribeToTitleColorChanges:^(UIColor *aColor) {
-        titleLabel.textColor = aColor;
-    }];
-
     // Subscribe to value changes with ReactiveCocoa
     RAC(self.view, backgroundColor) = self.viewModel.bgColorSignal;
+    RAC(titleLabel, textColor) = self.viewModel.titleColorSignal;
 }
 
 - (void)didReceiveMemoryWarning {

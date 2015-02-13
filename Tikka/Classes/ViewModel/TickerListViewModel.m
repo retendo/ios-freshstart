@@ -16,8 +16,7 @@
 
 @property(nonatomic, strong) UIColor *titleColor;
 @property(nonatomic, strong) UIColor *bgColor;
-@property(nonatomic, copy) void (^titleColorUpdateBlock)(UIColor *);
-@property(nonatomic, strong) NSTimer *timer;
+@property (nonatomic, strong) RACSignal *titleColorSignal;
 @property (nonatomic, strong) RACSignal *bgColorSignal;
 
 @end
@@ -35,6 +34,7 @@ static const NSTimeInterval fireInterval = 0.05;
     if (self) {
 
         self.bgColorSignal = RACObserve(self, bgColor);
+        self.titleColorSignal = RACObserve(self, titleColor);
 
         RACSignal *timerSignal = [RACSignal interval:fireInterval onScheduler:[RACScheduler mainThreadScheduler]];
 
@@ -44,47 +44,19 @@ static const NSTimeInterval fireInterval = 0.05;
             return [UIColor colorByIncrementingHueFromColor:self.bgColor by:hueStep];
         }] startWith:[UIColor colorWithHue:0.0 saturation:0.7 brightness:0.9 alpha:1.0]];
 
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:fireInterval
-                                                      target:self
-                                                    selector:@selector(changeTitleColor)
-                                                    userInfo:nil
-                                                     repeats:YES];
-
-        self.titleColor =  [UIColor colorWithHue:0.0 saturation:0.9 brightness:0.7 alpha:1.0];
+        RAC(self, titleColor) = [[timerSignal map:^id(id _) {
+            @strongify(self);
+            return [UIColor colorByIncrementingHueFromColor:self.titleColor by:hueStep];
+        }] startWith:[UIColor colorWithHue:0.0 saturation:0.9 brightness:0.7 alpha:1.0]];
     }
 
     return self;
-}
-
-- (void)dealloc {
-    [self.timer invalidate];
-    self.timer = nil;
 }
 
 #pragma mark Public
 
 - (NSString *)title {
     return NSLocalizedString(@"NavTitle_TickerList", @"Tikka");
-}
-
-- (void)subscribeToTitleColorChanges:(void (^)(UIColor *))aUpdateBlock {
-    self.titleColorUpdateBlock = aUpdateBlock;
-    aUpdateBlock(self.titleColor);
-}
-
-#pragma mark Setter
-
-- (void)setTitleColor:(UIColor *)aTitleColor {
-    _titleColor = aTitleColor;
-    if (self.titleColorUpdateBlock) {
-        self.titleColorUpdateBlock(_titleColor);
-    }
-}
-
-#pragma mark Private
-
-- (void)changeTitleColor {
-    self.titleColor = [UIColor colorByIncrementingHueFromColor:self.titleColor by:hueStep];
 }
 
 @end

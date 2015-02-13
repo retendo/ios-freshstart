@@ -11,9 +11,8 @@
 @interface TickerListViewModel : NSObject
 
 @property (nonatomic, strong, readonly) RACSignal *bgColorSignal;
+@property (nonatomic, strong, readonly) RACSignal *titleColorSignal;
 
 - (NSString *)title;
-
-- (void)subscribeToTitleColorChanges:(void (^)(UIColor *))aUpdateBlock;
 
 @end
