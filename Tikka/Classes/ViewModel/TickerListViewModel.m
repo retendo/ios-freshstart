@@ -39,10 +39,10 @@ static const NSTimeInterval fireInterval = 0.05;
         RACSignal *timerSignal = [RACSignal interval:fireInterval onScheduler:[RACScheduler mainThreadScheduler]];
 
         @weakify(self);
-        RAC(self, bgColor) = [timerSignal map:^id(id _) {
+        RAC(self, bgColor) = [[timerSignal map:^id(id _) {
             @strongify(self);
             return [UIColor colorByIncrementingHueFromColor:self.bgColor by:hueStep];
-        }];
+        }] startWith:[UIColor colorWithHue:0.0 saturation:0.7 brightness:0.9 alpha:1.0]];
 
         self.timer = [NSTimer scheduledTimerWithTimeInterval:fireInterval
                                                       target:self
@@ -50,8 +50,7 @@ static const NSTimeInterval fireInterval = 0.05;
                                                     userInfo:nil
                                                      repeats:YES];
 
-        self.titleColor =  [UIColor colorWithHue:hueStep saturation:0.9 brightness:0.7 alpha:1.0];
-        self.bgColor = [UIColor colorWithHue:hueStep saturation:0.7 brightness:0.9 alpha:1.0];
+        self.titleColor =  [UIColor colorWithHue:0.0 saturation:0.9 brightness:0.7 alpha:1.0];
     }
 
     return self;
