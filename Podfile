@@ -5,6 +5,7 @@ target 'Tikka' do
 
   pod 'ReactiveCocoa', '~> 2.4'
   pod 'libextobjc', '~> 0.4'
+  pod 'SSKeychain', '~> 1.2'
 
 end
 
