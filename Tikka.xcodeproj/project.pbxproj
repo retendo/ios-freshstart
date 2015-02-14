@@ -12,6 +12,7 @@
 		417213420F932854FD256AB6 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 417216B439E2A3D042D1E61C /* User.m */; };
 		417213CB6C65FA916FEDFEE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 417213219A484D52CF814AD6 /* AppDelegate.m */; };
 		4172146BCAB1C631370A3FC4 /* UIColor+Hue.m in Sources */ = {isa = PBXBuildFile; fileRef = 41721E40EE2FA6905E366B75 /* UIColor+Hue.m */; };
+		41721A4F14F9FDDCE1622D15 /* Ticker.m in Sources */ = {isa = PBXBuildFile; fileRef = 417219DB5C2A6B6790A5D16A /* Ticker.m */; };
 		41721CC9C40E3CEA8D7D7AC5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 417215B6052C4884027BDCF6 /* Localizable.strings */; };
 		41721E3C8F93E5E382548A18 /* TickerListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417215F76EAB2E46662ADE69 /* TickerListController.m */; };
 		8A338D981A8A9C06002AD022 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A338D971A8A9C06002AD022 /* main.m */; };
@@ -36,7 +37,9 @@
 		417215B6052C4884027BDCF6 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		417215F76EAB2E46662ADE69 /* TickerListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TickerListController.m; sourceTree = "<group>"; };
 		417216B439E2A3D042D1E61C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		417217BD5082E4EBCE0BB290 /* Ticker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticker.h; sourceTree = "<group>"; };
 		417218D1D68F3A5DAC99B7D4 /* TickerListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TickerListViewModel.h; sourceTree = "<group>"; };
+		417219DB5C2A6B6790A5D16A /* Ticker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticker.m; sourceTree = "<group>"; };
 		41721AD204B5FE80801364FD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41721D8C8B1E8839C2E2961C /* TickerListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TickerListViewModel.m; sourceTree = "<group>"; };
 		41721E3B3332623BF052A095 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -134,6 +137,8 @@
 			children = (
 				417216B439E2A3D042D1E61C /* User.m */,
 				41721E3B3332623BF052A095 /* User.h */,
+				417219DB5C2A6B6790A5D16A /* Ticker.m */,
+				417217BD5082E4EBCE0BB290 /* Ticker.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -343,6 +348,7 @@
 				41721242ED9CF265954B1A7F /* TickerListViewModel.m in Sources */,
 				4172146BCAB1C631370A3FC4 /* UIColor+Hue.m in Sources */,
 				417213420F932854FD256AB6 /* User.m in Sources */,
+				41721A4F14F9FDDCE1622D15 /* Ticker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
