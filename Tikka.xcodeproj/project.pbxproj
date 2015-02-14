@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		065C79676930F8CC152D376D /* libPods-Tikka.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5C3007AAC2076F8DADC17D8 /* libPods-Tikka.a */; };
+		41721142D4F452B1F701A28F /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 4172118C2F9B5E0BC135C139 /* Post.m */; };
 		41721242ED9CF265954B1A7F /* TickerListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41721D8C8B1E8839C2E2961C /* TickerListViewModel.m */; };
 		417213420F932854FD256AB6 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 417216B439E2A3D042D1E61C /* User.m */; };
 		417213CB6C65FA916FEDFEE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 417213219A484D52CF814AD6 /* AppDelegate.m */; };
@@ -32,12 +33,14 @@
 
 /* Begin PBXFileReference section */
 		4172100BBAF57F225C489714 /* TickerListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TickerListController.h; sourceTree = "<group>"; };
+		4172118C2F9B5E0BC135C139 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		417213219A484D52CF814AD6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		417213E856C6A026527725EB /* UIColor+Hue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hue.h"; sourceTree = "<group>"; };
 		417215B6052C4884027BDCF6 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		417215F76EAB2E46662ADE69 /* TickerListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TickerListController.m; sourceTree = "<group>"; };
 		417216B439E2A3D042D1E61C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		417217BD5082E4EBCE0BB290 /* Ticker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticker.h; sourceTree = "<group>"; };
+		41721803AD29D72A96EDEAA6 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
 		417218D1D68F3A5DAC99B7D4 /* TickerListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TickerListViewModel.h; sourceTree = "<group>"; };
 		417219DB5C2A6B6790A5D16A /* Ticker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticker.m; sourceTree = "<group>"; };
 		41721AD204B5FE80801364FD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -139,6 +142,8 @@
 				41721E3B3332623BF052A095 /* User.h */,
 				417219DB5C2A6B6790A5D16A /* Ticker.m */,
 				417217BD5082E4EBCE0BB290 /* Ticker.h */,
+				4172118C2F9B5E0BC135C139 /* Post.m */,
+				41721803AD29D72A96EDEAA6 /* Post.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 				4172146BCAB1C631370A3FC4 /* UIColor+Hue.m in Sources */,
 				417213420F932854FD256AB6 /* User.m in Sources */,
 				41721A4F14F9FDDCE1622D15 /* Ticker.m in Sources */,
+				41721142D4F452B1F701A28F /* Post.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
