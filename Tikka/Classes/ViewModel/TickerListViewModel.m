@@ -27,7 +27,7 @@ static const NSTimeInterval fireInterval = 0.05;
 
 @implementation TickerListViewModel
 
-#pragma mark Lifecycle
+#pragma mark - Lifecycle
 
 - (instancetype)init {
     self = [super init];
@@ -53,7 +53,7 @@ static const NSTimeInterval fireInterval = 0.05;
     return self;
 }
 
-#pragma mark Public
+#pragma mark - Public
 
 - (NSString *)title {
     return NSLocalizedString(@"NavTitle_TickerList", @"Tikka");

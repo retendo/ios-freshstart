@@ -19,7 +19,7 @@
 
 @implementation TickerListController
 
-#pragma mark Initializer
+#pragma mark - Initializer
 #pragma mark Designated Initializer
 
 - (instancetype)initWithViewModel:(TickerListViewModel *)aViewModel {
@@ -39,7 +39,7 @@
     return [self initWithViewModel:nil];
 }
 
-#pragma mark Lifecycle
+#pragma mark - View Lifecycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -55,11 +55,6 @@
     // Subscribe to value changes with ReactiveCocoa
     RAC(self.view, backgroundColor) = self.viewModel.bgColorSignal;
     RAC(titleLabel, textColor) = self.viewModel.titleColorSignal;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
