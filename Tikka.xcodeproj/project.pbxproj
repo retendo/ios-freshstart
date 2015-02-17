@@ -16,6 +16,7 @@
 		41721A4F14F9FDDCE1622D15 /* Ticker.m in Sources */ = {isa = PBXBuildFile; fileRef = 417219DB5C2A6B6790A5D16A /* Ticker.m */; };
 		41721CC9C40E3CEA8D7D7AC5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 417215B6052C4884027BDCF6 /* Localizable.strings */; };
 		41721E3C8F93E5E382548A18 /* TickerListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417215F76EAB2E46662ADE69 /* TickerListController.m */; };
+		41721E76CCA7BBED8C5707A3 /* MockAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 41721ABC458EEEAE95703925 /* MockAPIService.m */; };
 		8A338D981A8A9C06002AD022 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A338D971A8A9C06002AD022 /* main.m */; };
 		8A338DA31A8A9C06002AD022 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A338DA21A8A9C06002AD022 /* Images.xcassets */; };
 		8A338DB21A8A9C06002AD022 /* TikkaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A338DB11A8A9C06002AD022 /* TikkaTests.m */; };
@@ -39,11 +40,14 @@
 		417215B6052C4884027BDCF6 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		417215F76EAB2E46662ADE69 /* TickerListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TickerListController.m; sourceTree = "<group>"; };
 		417216B439E2A3D042D1E61C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		4172176627BF82EBE47B6031 /* MockAPIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockAPIService.h; sourceTree = "<group>"; };
 		417217BD5082E4EBCE0BB290 /* Ticker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticker.h; sourceTree = "<group>"; };
 		41721803AD29D72A96EDEAA6 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
 		417218D1D68F3A5DAC99B7D4 /* TickerListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TickerListViewModel.h; sourceTree = "<group>"; };
 		417219DB5C2A6B6790A5D16A /* Ticker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticker.m; sourceTree = "<group>"; };
+		41721ABC458EEEAE95703925 /* MockAPIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockAPIService.m; sourceTree = "<group>"; };
 		41721AD204B5FE80801364FD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		41721BC8F71F20A3604A1C37 /* APIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIService.h; sourceTree = "<group>"; };
 		41721D8C8B1E8839C2E2961C /* TickerListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TickerListViewModel.m; sourceTree = "<group>"; };
 		41721E3B3332623BF052A095 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		41721E40EE2FA6905E366B75 /* UIColor+Hue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hue.m"; sourceTree = "<group>"; };
@@ -117,6 +121,9 @@
 		4172168581BA89B3FF1013B4 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				41721ABC458EEEAE95703925 /* MockAPIService.m */,
+				4172176627BF82EBE47B6031 /* MockAPIService.h */,
+				41721BC8F71F20A3604A1C37 /* APIService.h */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -355,6 +362,7 @@
 				417213420F932854FD256AB6 /* User.m in Sources */,
 				41721A4F14F9FDDCE1622D15 /* Ticker.m in Sources */,
 				41721142D4F452B1F701A28F /* Post.m in Sources */,
+				41721E76CCA7BBED8C5707A3 /* MockAPIService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
