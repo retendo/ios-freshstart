@@ -86,4 +86,4 @@ Model:
 
 Service:
 * Similar to ViewModel in that it exposes Signals as properties or return values of methods
-* If you implement a mock service first, use a protocol that declares all public methods. Use mock service as id<Prototol> type so you can easily switch it out later
+* If you implement a mock service first, use a protocol that declares all public methods. Use mock service as id&lt;Prototol&gt; type so you can easily switch it out later
